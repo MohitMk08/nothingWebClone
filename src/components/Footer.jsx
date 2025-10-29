@@ -57,7 +57,7 @@ const Footer = () => {
                         </div>
 
                         <div className="text-sm text-gray-500">
-                            <p>© 2025 Nothing Technology Limited. All rights reserved.</p>
+                            <p>© 2025 MK Technology Limited. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
