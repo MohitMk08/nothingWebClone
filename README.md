@@ -1,6 +1,6 @@
-# 🪶 Nothing-Inspired Header UI
+# 🪶 Nothing-Inspired UI
 
-A sleek, minimalist, and animated **floating header** built using **React + Vite + Tailwind CSS + Framer Motion** — inspired by the clean aesthetics of *Nothing* design language.
+A sleek, minimalist, and animated **Nothing landing page** built using **React + Vite + Tailwind CSS + Framer Motion** — inspired by the clean aesthetics of *Nothing* design language.
 
 This header features smooth animations, glassmorphism effects, and modern UI behavior:
 - Hides on scroll down  
@@ -39,5 +39,4 @@ This header features smooth animations, glassmorphism effects, and modern UI beh
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/nothing-header-ui.git
-cd nothing-header-ui
+git clone https://github.com/MohitMk08/nothingWebClone.git
