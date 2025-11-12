@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Play, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import phone3a from "../assets/nothing3a.webp";
+import phone3a from "../assets/nothing3aPro.webp";
 import promoVideo from "../assets/Phone3Clip.mp4";
 
 

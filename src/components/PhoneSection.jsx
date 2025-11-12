@@ -21,8 +21,14 @@ const PhoneSection = () => {
                         >
                             {/* Product Image */}
                             <div className="aspect-square overflow-hidden relative bg-linear-to-br from-zinc-900 to-black">
+                                {/* <img
+                                    src={product.mainImage}
+                                    alt={product.name}
+                                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                                /> */}
+
                                 <img
-                                    src={product.image}
+                                    src={new URL(`../assets/${product.mainImage}`, import.meta.url).href}
                                     alt={product.name}
                                     className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                                 />
@@ -58,7 +64,7 @@ const PhoneSection = () => {
                                 {/* Price and CTA */}
                                 <div className="flex items-center justify-between pt-6 border-t border-white/10">
                                     <span className="text-3xl font-bold text-white">
-                                        {product.price}
+                                        {product.currency}{product.price}
                                     </span>
                                     <button className="px-6 py-3 bg-white text-black rounded-full hover:bg-gray-200 font-medium transition-all duration-300">
                                         Learn more

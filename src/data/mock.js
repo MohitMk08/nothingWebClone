@@ -1,81 +1,138 @@
-import phone3a from "../assets/nothing3a.webp"
-import phone3 from "../assets/nothing-phone-3.webp"
-import ear2 from "../assets/ear2.webp"
-import ear3 from "../assets/ear3.webp"
-import cmfPhone1 from "../assets/cmfPhone1.webp"
-import cmfBuds1 from "../assets/cmfBudsPro.webp"
 
-
-
+// src/data/mock.js
 
 export const products = {
-
     phones: [
         {
-            id: 1,
-            name: 'Phone (3)',
-            tagline: 'Pure instinct.',
-            description: 'A phone with powerful performance, intelligent AI, and an iconic design.',
-            price: '£349',
-            image: phone3,
-            features: ['6.77" AMOLED Display', '50MP Triple Camera', '5000mAh Battery']
+            id: "phone-3",
+            slug: "nothing-phone-3",
+            name: "Nothing Phone (3)",
+            price: 699,
+            currency: "$",
+            shortDescription: "The flagship blend of performance and minimal design.",
+            description: `Nothing Phone (3) pairs flagship performance with an iconic transparent design and Glyph Interface for expressive interactions.`,
+            mainImage: "nothing3.webp",
+            gallery: ["nothing3-1.webp", "nothing3-2.webp", "nothing3-3.webp"],
+            colors: [
+                { id: "black", name: "Black", hex: "#000000" },
+                { id: "white", name: "White", hex: "#ffffff" },
+                { id: "silver", name: "Silver", hex: "#dcdcdc" },
+            ],
+            variants: [
+                { storage: "128GB", price: 699 },
+                { storage: "256GB", price: 749 },
+            ],
+            features: [
+                "6.7\" LTPO AMOLED display",
+                "50MP main camera",
+                "12GB RAM",
+                "5000 mAh battery",
+                "Glyph Interface",
+            ],
         },
         {
-            id: 2,
-            name: 'Phone (3a)',
-            tagline: 'Pro power. Pure design.',
-            description: 'Enhanced performance with advanced AI capabilities.',
-            price: '£449',
-            image: phone3a,
-            features: ['6.77" AMOLED Display', '50MP Triple Camera', '5500mAh Battery']
-        }
+            id: "phone-3a",
+            slug: "nothing-phone-3a",
+            name: "Nothing Phone (3a)",
+            price: 499,
+            currency: "$",
+            shortDescription: "Balanced performance in a compact, clean package.",
+            description: `Nothing Phone (3a) delivers efficient performance with a lightweight chassis and Glyph-inspired UI.`,
+            mainImage: "nothing3a-1.webp",
+            gallery: ["nothing3a-1.webp", "nothing3a-2.webp"],
+            colors: [
+                { id: "black", name: "Black", hex: "#000000" },
+                { id: "chalk", name: "Chalk", hex: "#f5f5f4" },
+            ],
+            variants: [{ storage: "128GB", price: 499 }],
+            features: ["6.5\" AMOLED", "50MP camera", "6/8GB RAM", "4500 mAh battery"],
+        },
+        {
+            id: "phone-2a",
+            slug: "nothing-phone-2a",
+            name: "Nothing Phone (2a)",
+            price: 349,
+            currency: "$",
+            shortDescription: "Affordable Nothing experience with essential features.",
+            description: `A compact, value-focused handset with the signature Nothing visual cues and a clean software experience.`,
+            mainImage: "nothing2a.webp",
+            gallery: ["nothing2a-1.webp", "nothing2a-2.webp"],
+            colors: [
+                { id: "black", name: "Black", hex: "#000000" },
+                { id: "green", name: "Mint", hex: "#dff3e3" },
+            ],
+            variants: [{ storage: "128GB", price: 349 }],
+            features: ["6.4\" OLED", "48MP camera", "4/6GB RAM", "4300 mAh battery"],
+        },
     ],
+
     audio: [
         {
-            id: 3,
-            name: 'Ear (3)',
-            tagline: 'Sound by nature.',
-            description: 'Premium audio with adaptive ANC and all-day comfort.',
-            price: '£149',
-            image: ear3,
-            features: ['Adaptive ANC', '40dB Noise Cancellation', '32-hour Battery']
+            id: "ear-2",
+            slug: "nothing-ear-2",
+            name: "Ear (2)",
+            price: 129,
+            currency: "$",
+            shortDescription: "Natural sound with a lightweight design.",
+            description: `Ear (2) refines the signature Nothing earbud form with improved drivers and noise handling.`,
+            mainImage: "ear2.webp",
+            gallery: ["ear2-1.webp", "ear2-2.webp"],
+            colors: [{ id: "white", name: "White", hex: "#ffffff" }],
+            variants: [{ edition: "Standard", price: 129 }],
+            features: ["Hybrid drivers", "30h total battery", "ANC"],
         },
         {
-            id: 4,
-            name: 'Ear (2)',
-            tagline: 'Innovation you can hear.',
-            description: 'Crystal-clear sound with intelligent noise cancellation.',
-            price: '£129',
-            image: ear2,
-            features: ['Hi-Res Audio', 'ANC', '36-hour Battery']
-        }
+            id: "ear-3",
+            slug: "nothing-ear-stick",
+            name: "Ear (3)",
+            price: 79,
+            currency: "$",
+            shortDescription: "Compact stick-style earbuds with great value.",
+            description: `Ear (Stick) gives a compact stick form with balanced sound and long battery life.`,
+            mainImage: "ear3.webp",
+            gallery: ["ear-3-1.webp", "ear-3-2.webp"],
+            colors: [{ id: "white", name: "White", hex: "#ffffff" }],
+            variants: [{ edition: "Standard", price: 79 }],
+            features: ["20h battery", "Quick pairing", "USB-C charging"],
+        },
     ],
+
     cmf: [
         {
-            id: 5,
-            name: 'CMF Phone 1',
-            tagline: 'Smart choice. Bold design.',
-            description: 'Essential features with nothing ordinary design.',
-            price: '£199',
-            image: cmfPhone1,
-            features: ['6.67" Display', 'MediaTek Dimensity', 'Modular Design']
+            id: "watch-3-pro",
+            slug: "cmf-watch3-pro",
+            name: "CMF Watch 3 Pro",
+            price: 249,
+            currency: "$",
+            shortDescription: "Premium health tracking with a polished design.",
+            description: `CMF Watch 2 Pro blends premium materials with accurate health sensors and a vibrant display.`,
+            mainImage: "CMFWatch3Pro.webp",
+            gallery: ["watch-pro-1.webp", "watch-pro-2.webp"],
+            colors: [{ id: "black", name: "Black", hex: "#000000" }],
+            variants: [{ edition: "Pro", price: 249 }],
+            features: ["AMOLED screen", "Heart rate & SpO2", "14-day battery"],
         },
         {
-            id: 6,
-            name: 'CMF Buds Pro',
-            tagline: 'Premium sound. Smart price.',
-            description: 'High-quality audio without compromise.',
-            price: '£49',
-            image: cmfBuds1,
-            features: ['45dB ANC', 'Ultra Bass', '43-hour Battery']
-        }
-    ]
+            id: "watch-2-pro",
+            slug: "cmf-watch-2-pro",
+            name: "CMF Watch 2 Pro",
+            price: 149,
+            currency: "$",
+            shortDescription: "Lightweight, everyday smartwatch.",
+            description: `A lightweight smartwatch with essential fitness features and an elegant UI.`,
+            mainImage: "Cmf-Watch-pro-2.webp",
+            gallery: ["watch-2-1.webp", "watch-2-2.webp"],
+            colors: [{ id: "silver", name: "Silver", hex: "#dcdcdc" }],
+            variants: [{ edition: "Standard", price: 149 }],
+            features: ["AMOLED display", "Sleep tracking", "7-day battery"],
+        },
+    ],
 };
 
 export const navItems = [
-    { name: 'Products', path: '/products' },
-    { name: 'Shop', path: '/shop' },
-    { name: 'Community', path: '/community' },
-    { name: 'About', path: '/about' },
-    { name: 'Support', path: '/support' }
+    { name: "Products", path: "/products" },
+    { name: "Shop", path: "/shop" },
+    { name: "Community", path: "/community" },
+    { name: "About", path: "/about" },
+    { name: "Support", path: "/support" },
 ];
